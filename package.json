@@ -1,0 +1,25 @@
+{
+  "name": "vite-lib-e2e",
+  "version": "1.0.0",
+  "description": "Test of e2e testing for a js library built using vite using jest and puppeteer.",
+  "files":["dist"],
+  "main":"./dist/vite-lib-e2e.umd.js",
+  "module":"./dist/vite-lib-e2e.es.js",
+  "exports": {
+    ".": {
+      "import": "./dist/vite-lib-e2e.es.js",
+      "require": "./dist/vite-lib-e2e.umd.js"
+    }
+  },
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "vite": "^5.3.5"
+  }
+}

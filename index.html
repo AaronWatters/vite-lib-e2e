@@ -1,0 +1,16 @@
+
+<html>
+<head>
+    <title>Home</title>
+</head>
+<body>
+    <h1>Home</h1>
+    <p>Welcome to the home page.</p>
+    <p>three plus six is <span id="answer">unknown</span></p>
+    <script type="module">
+        import { sum, name } from './lib/main';
+        console.log("name is " + name);
+        document.getElementById('answer').textContent = sum(3, 6);
+    </script>
+</body>
+</html>
