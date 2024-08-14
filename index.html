@@ -1,16 +1,19 @@
 
 <html>
 <head>
-    <title>Home</title>
+    <title>Expected Title</title>
 </head>
 <body>
+    <div id="app">Hello, World!</div>
     <h1>Home</h1>
     <p>Welcome to the home page.</p>
     <p>three plus six is <span id="answer">unknown</span></p>
     <script type="module">
-        import { sum, name } from './lib/main';
-        console.log("name is " + name);
-        document.getElementById('answer').textContent = sum(3, 6);
+        //import { sum, name } from './lib/main';
+        import * as main from './lib/main';
+        console.log("name is " + main.name);
+        document.getElementById('answer').textContent = main.sum(3, 6);
+        window.main = main;
     </script>
 </body>
 </html>
