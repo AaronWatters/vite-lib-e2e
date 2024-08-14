@@ -21,8 +21,15 @@ export default defineConfig({
       entry: resolve(__dirname, 'lib/main.js'),
       name: 'vite-lib-e2e',
       fileName: (format) => `vite-lib-e2e.${format}.js`
-    }
-  }
+    },
+  },
+  // Other Vite configuration options...
+  server: {
+    port: 5555, // Configures the development server to use port 3000
+  },
+  preview: {
+    port: 5555, // Configures the preview server to use port 3000
+  },
 });
 /*
 module.exports = defineConfig({
