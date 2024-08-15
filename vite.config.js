@@ -11,9 +11,17 @@ export default defineConfig({
     },
   },
   test: {
-    exclude: [...configDefaults.exclude, 'tests/e2e/*'], // Exclude e2e tests if you have any
+    exclude: [
+      ...configDefaults.exclude, 
+      'tests/e2e/*', // Exclude e2e tests if you have any
+    ],
     coverage: {
       reporter: ['text', 'json', 'html'],
+      exclude: [
+        'tests/**/*',
+        'dist/**/*',
+        "*.js", // Exclude all JavaScript files in the root directory
+      ],
     },
   },
   build: {
