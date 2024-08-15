@@ -13,6 +13,8 @@
         import * as main from './lib/main';
         console.log("name is " + main.name);
         document.getElementById('answer').textContent = main.sum(3, 6);
+
+        // expose main to the global scope for e2e testing
         window.main = main;
     </script>
 </body>
