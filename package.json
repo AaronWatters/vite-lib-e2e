@@ -18,7 +18,8 @@
     "build": "vite build",
     "preview": "vite preview",
     "test": "vitest",
-    "test:e2e": "start-server-and-test dev http://localhost:5555 'npx playwright test'"  
+    "test:e2e": "start-server-and-test dev http://localhost:5555 'npx playwright test'",
+    "test:coverage": "vitest --coverage"  
   },
   "keywords": [],
   "author": "",
