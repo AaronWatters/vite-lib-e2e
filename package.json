@@ -1,7 +1,7 @@
 {
   "name": "vite-lib-e2e",
   "version": "1.0.0",
-  "description": "Test of e2e testing for a js library built using vite using jest and puppeteer.",
+  "description": "Test of e2e testing for a js library built using vite.",
   "files": [
     "dist"
   ],

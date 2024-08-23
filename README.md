@@ -16,6 +16,35 @@ The implementation uses `vitest` for unit tests and `playwright` for e2e tests.
 I hope this provides a useful working reference for adding testing
 to Javascript libraries.
 
+# Running the tests
+
+After installing the package
+
+```
+npm install
+```
+
+Run the unit tests like this:
+
+```
+npm run test
+```
+
+And run the end-to-end tests (which make use of a headless browser) like this
+
+```
+npm run test:e2e
+```
+
+To run the unit tests and generate a coverage report:
+
+```
+npm run test:coverage
+```
+
+The full HTML coverage report will appear
+in the `coverage` folder rooted at `coverage/index.html`.
+
 # The files
 
 Here is an explanation of some of the structure and content
