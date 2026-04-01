@@ -19,7 +19,8 @@
     "preview": "vite preview",
     "test": "vitest",
     "test:e2e": "start-server-and-test dev http://localhost:5555 'npx playwright test'",
-    "test:coverage": "vitest --coverage"  
+    "test:coverage": "vitest --coverage",
+    "docs": "jsdoc -c jsdoc.config.json"
   },
   "keywords": [],
   "author": "",
@@ -28,6 +29,7 @@
     "@playwright/test": "^1.46.0",
     "@vitest/coverage-v8": "^2.0.5",
     "c8": "^10.1.2",
+    "jsdoc": "^4.0.5",
     "playwright": "^1.46.0",
     "start-server-and-test": "^2.0.5",
     "vite": "^5.4.0",
